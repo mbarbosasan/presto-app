@@ -24,7 +24,7 @@
 
 ## Description
 
-Criei esse projeto com o objetivo de ir aprendendo NestJS de forma autodidata junto com o Prisma e colocando em prática os conhecimentos adquiridos.
+Criei esse projeto com o objetivo de ir aprendendo NestJS de forma autodidata junto com o Prisma e colocando em prática os conhecimentos adquiridos, posteriormente também pretendo fazer um client com Angular e integrar as funcionalidades, por enquanto sem previsão.
 
 A idéia inicial do aplicativo é ser uma central de Reviews sobre os mais variados tipos de produtos, é extremamente comum, principalmente em compras pela internet buscarmos informações sobre o produto através de Reviews e na maioria das vezes é sempre no YouTube, no entanto, isso nos leva a um problema que são as chamadas Reviews "Patrocinadas" onde a pessoa que está fazendo a review tem uma opinião enviesada por ter sido pago para falar bem.
 
