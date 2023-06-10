@@ -24,7 +24,11 @@
 
 ## Description
 
-[Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
+Criei esse projeto com o objetivo de ir aprendendo NestJS de forma autodidata junto com o Prisma e colocando em prática os conhecimentos adquiridos.
+
+A idéia inicial do aplicativo é ser uma central de Reviews sobre os mais variados tipos de produtos, é extremamente comum, principalmente em compras pela internet buscarmos informações sobre o produto através de Reviews e na maioria das vezes é sempre no YouTube, no entanto, isso nos leva a um problema que são as chamadas Reviews "Patrocinadas" onde a pessoa que está fazendo a review tem uma opinião enviesada por ter sido pago para falar bem.
+
+Na plataforma a idéia e incentivar as pessoas "comuns" a escreverem suas avaliações de forma "não-profissional" e ajudar outras pessoas na tomada de decisão.
 
 ## Installation
 
