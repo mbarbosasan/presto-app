@@ -21,7 +21,7 @@ model User {
 
 model Review {
   id             Int      @id @default(autoincrement())
-  userId         Int?
+  userId         Int
   title          String
   description    String
   rating_cxb     Int
@@ -30,7 +30,7 @@ model Review {
   rating_overall Int
   timestamp      DateTime
   productId      Int?
-  User           User?    @relation(fields: [userId], references: [id])
+  User           User     @relation(fields: [userId], references: [id])
   product        Product? @relation(fields: [productId], references: [id])
 }
 
