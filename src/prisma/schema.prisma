@@ -29,23 +29,16 @@ model Review {
   rating_price   Int
   rating_overall Int
   timestamp      DateTime
-  productId      Int?
+  product_name   String
+  product_price  Int
+  product_image  String
+  categoryId     Int
   User           User     @relation(fields: [userId], references: [id])
-  product        Product? @relation(fields: [productId], references: [id])
-}
-
-model Product {
-  id         Int      @id @default(autoincrement())
-  name       String
-  price      Float
-  image      String
-  categoryId Int
-  category   Category @relation(fields: [categoryId], references: [id])
-  reviews    Review[]
+  category       Category @relation(fields: [categoryId], references: [id])
 }
 
 model Category {
-  id       Int       @id @default(autoincrement())
-  name     String
-  products Product[]
+  id      Int      @id @default(autoincrement())
+  name    String
+  reviews Review[]
 }
