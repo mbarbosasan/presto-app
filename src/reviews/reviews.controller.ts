@@ -24,10 +24,11 @@ export class ReviewsController {
   @Post('create')
   @UseInterceptors(FileInterceptor('file'))
   async createReview(
-    @Body() review: Review,
+    @Body() req,
     @UploadedFile() file: Express.Multer.File,
   ) {
     try {
+      const review: Review = JSON.parse(req.review);
       await this.reviewService.createReview(review, file);
     } catch (e) {
       if (e instanceof Prisma.PrismaClientKnownRequestError) {

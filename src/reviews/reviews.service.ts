@@ -24,6 +24,9 @@ export class ReviewsService {
           await prisma.review.create({
             data: newReview,
           });
+        }).catch((error) => {
+          console.log(error);
+            throw new InternalServerErrorException(error.message);
         });
       });
     } catch (error) {
